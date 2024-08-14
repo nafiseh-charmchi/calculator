@@ -1,0 +1,122 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  text-align: center;
+}
+/* ................................ */
+#bodyOfCalculator {
+  width: 240px;
+  height: 90vh;
+  margin: 10px auto;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+#screen {
+  height: 130px;
+  margin: 0 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+#showNumber,
+#showResult {
+  width: 100%;
+  height: fit-content;
+  text-align: right;
+}
+#showResult {
+  font-size: 30px;
+}
+
+#theme {
+  width: 65px;
+  height: 26px;
+  background-color: #ffffff;
+  margin: 5px 0 10px 15px;
+  padding: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#changer_theme {
+  width: 65px;
+  height: 26px;
+  padding: 0 2.5px 3px 0px;
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  transition: all 2s;
+}
+
+#changer_theme_button {
+  width: 22px;
+  height: 22px;
+  background-color: rgba(3, 20, 255, 0.493);
+  border: 1px solid rgba(122, 120, 120, 0.315);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.transitionToLightMood {
+  justify-content: right !important;
+}
+
+.transitionToDarkMood {
+  justify-content: left !important;
+}
+
+#motherKeyboard {
+  height: fit-content;
+  margin: 0 20px;
+}
+
+.keyboard {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  color: #ffffffee;
+}
+
+.buttons,
+.numbers {
+  width: 40px;
+  height: 40px;
+  background-color: #5c4fb8fc;
+  border-radius: 20%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* special buttons */
+div#equal,
+div#AC {
+  background-color: rgb(250, 140, 37);
+}
+#backSpace {
+  background-color: #5c4fb8fc;
+}
+
+.numbers {
+  background-color: #111329;
+}
+
+.invalidValue {
+  width: 100px;
+  height: fit-content;
+  background-color: #b43f3f;
+  padding: 5px;
+  font-size: small;
+  position: fixed;
+  right: 40%;
+  top: 50%;
+}
